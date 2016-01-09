@@ -104,6 +104,12 @@ $global:restart = $false
 $script:listener = $null
 $counter = 0
 
+#ensure that we are elevated.
+If (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    write-host "You must run this command elevated"
+    return
+}
+
 # make sure base folder is a directory
 if( !($base= (resolve-path "$($root.FullName)\" -ea 0).Path) ) {
     return write-error "Folder '$root' does not exist"
