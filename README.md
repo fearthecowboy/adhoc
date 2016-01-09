@@ -18,17 +18,15 @@ Really flexible adhoc webserver written in PowerShell.
     - HTTP  
     - HTTPS -- use my CertScriptTool to help make a cert for that: http://github.com/fearthecowboy/CertScriptTool 
    
-   =========================
-   Nifty Feature Of the Week
-   =========================
+## Nifty Feature Of the Week
+   
    This webserver script watches itself to see if it's modified and restarts 
    itself when it detects a new version. This makes it really easy to launch 
    the webserver, then open this script in an editor, and make changes that
    take effect immediately upon saving.
    
-   ========================
-   Second Nifty Feature
-   ========================
+## Second Nifty Feature
+
    The script has a place to cherry-pick a URL if you want to send something 
    specific -- look for the comment: 
        # handle a few paths manually
