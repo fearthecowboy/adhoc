@@ -10,7 +10,8 @@ Really flexible adhoc webserver written in PowerShell.
    but it's not going to win any prizes for speed. Good when you need an adhoc
    webserver.
    
-   It supports 
+   It supports:
+   
     - setting base folder (current directory by default)
     - navigable directory listings (on by default)
     - arbitrary ports (default 80/443),
@@ -49,7 +50,7 @@ Really flexible adhoc webserver written in PowerShell.
 #### EXAMPLE
 
 ``` powershell
-PS c:\ > WebServer.ps1 -root c:\
+    PS c:\ > WebServer.ps1 -root c:\
     # starts a webserver, hosting files from the c:\ directory on 
     # http://*:80 and https://*:443 
 ```
