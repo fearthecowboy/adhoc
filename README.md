@@ -33,7 +33,7 @@ Really flexible adhoc webserver written in PowerShell.
        # handle a few paths manually
    and add your own custom responses.
    
-    Default custom responses:
+   Default custom responses:
     
     http://localhost/about -- shows an about page
     http://localhost/restart -- restarts the webserver script
