@@ -35,9 +35,9 @@ Really flexible adhoc webserver written in PowerShell.
    
    Default custom responses:
     
-    http://localhost/about -- shows an about page
-    http://localhost/restart -- restarts the webserver script
-    http://localhost/quit -- stops the webserver script
+    http://localhost/about   # shows an about page
+    http://localhost/restart # restarts the webserver script
+    http://localhost/quit    # stops the webserver script
 
 #### EXAMPLE
 
