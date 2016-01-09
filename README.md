@@ -18,14 +18,14 @@ Really flexible adhoc webserver written in PowerShell.
     - HTTP  
     - HTTPS -- use my CertScriptTool to help make a cert for that: http://github.com/fearthecowboy/CertScriptTool 
    
-## Nifty Feature Of the Week
+### Nifty Feature Of the Week
    
    This webserver script watches itself to see if it's modified and restarts 
    itself when it detects a new version. This makes it really easy to launch 
    the webserver, then open this script in an editor, and make changes that
    take effect immediately upon saving.
    
-## Second Nifty Feature
+### Second Nifty Feature
 
    The script has a place to cherry-pick a URL if you want to send something 
    specific -- look for the comment: 
@@ -38,7 +38,7 @@ Really flexible adhoc webserver written in PowerShell.
     http://localhost/restart -- restarts the webserver script
     http://localhost/quit -- stops the webserver script
 
-### EXAMPLE
+#### EXAMPLE
 
 ``` powershell
     PS c:\ > WebServer.ps1 
@@ -46,7 +46,7 @@ Really flexible adhoc webserver written in PowerShell.
     # http://*:80 and https://*:443 
 ```
 
-### EXAMPLE
+#### EXAMPLE
 
 ``` powershell
 PS c:\ > WebServer.ps1 -root c:\
@@ -54,7 +54,7 @@ PS c:\ > WebServer.ps1 -root c:\
     # http://*:80 and https://*:443 
 ```
    
-### EXAMPLE
+#### EXAMPLE
 
 ``` powershell
     PS c:\ > WebServer.ps1 -http 80,8080 -root c:\
@@ -62,7 +62,7 @@ PS c:\ > WebServer.ps1 -root c:\
     # http://*:80 and http://*:8080
 ```    
     
-### EXAMPLE
+#### EXAMPLE
 
 ``` powershell    
     PS c:\ > WebServer.ps1 -https 443 -root c:\
@@ -70,21 +70,21 @@ PS c:\ > WebServer.ps1 -root c:\
     # https://*:443 (secure only)
 ```
 
-### PARAMETER `Root`
+#### PARAMETER `Root`
   The folder from which to serve files from. Defaults to $PWD
   
-### PARAMETER `Hosts`
+#### PARAMETER `Hosts`
   The list of host names or ip addresses to listen on. Defaults to '*' (meaning all)
   
-### PARAMETER `Https`
+#### PARAMETER `Https`
   The HTTPS (SSL) ports to listen on (a cert must be bound on the port for that to work!)
   
   If either Https or Http are speficied, it will *only* use what's specified.
 
-### PARAMETER `Http`
+#### PARAMETER `Http`
   The HTTP ports to listen on.
   
   If either Https or Http are speficied, it will *only* use what's specified.
   
-### PARAMETER `NoFolderListing`
+#### PARAMETER `NoFolderListing`
   Specifiyng this will disable folder browsing.
